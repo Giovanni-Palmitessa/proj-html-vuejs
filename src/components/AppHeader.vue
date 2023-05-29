@@ -11,9 +11,9 @@ export default {
     <div class="container">
       <ul class="navbar">
         <li>
-          <a href="#"
-            ><img src="../assets/img/logo-autocar11.png" alt="Logo Autocar"
-          /></a>
+          <a href="#">
+            <img src="../assets/img/logo-autocar11.png" alt="Logo Autocar" />
+          </a>
         </li>
       </ul>
     </div>
