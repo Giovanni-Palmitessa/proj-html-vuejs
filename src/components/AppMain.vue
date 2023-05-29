@@ -91,7 +91,12 @@ export default {
     <section>
       <div class="container">
         <div class="smallCardList">
-          <SmallCard />
+          <SmallCard
+            v-for="smallCards in arrSmallCard"
+            :key="smallCards.type"
+            :carType="smallCards.type"
+            :urlImg="getImagePath(smallCards.img)"
+          />
         </div>
       </div>
     </section>
