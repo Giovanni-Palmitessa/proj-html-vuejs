@@ -1,6 +1,8 @@
-<script></script>
+<script>
+export default {};
+</script>
 <template>
-  <div>ciao</div>
+  <header></header>
 </template>
 
 <style lang="scss" scoped></style>
