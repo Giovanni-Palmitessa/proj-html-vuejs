@@ -18,18 +18,26 @@ export default {};
 
 <style lang="scss" scoped>
 @use "../assets/partials/variables" as *;
+
+.jumbo-details {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+}
 .jumbo {
   height: 100vh;
   background-image: url(../assets/img/slider-autocar-5.jpg);
   background-size: cover;
   color: $white-main;
   .jumbo-main {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
-    max-width: 360px;
+    max-width: 500px;
   }
   .jumbo-second {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     font-weight: 600;
   }
 }
