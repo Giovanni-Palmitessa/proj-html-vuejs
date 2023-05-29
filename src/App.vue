@@ -2,6 +2,19 @@
 import AppHeader from "./components/AppHeader.vue";
 
 export default {
+  data() {
+    return {
+      arrLiNavbar: [
+        "Home",
+        "About Us",
+        "Vehicles",
+        "Dealers",
+        "Packages",
+        "blog",
+        "Contact",
+      ],
+    };
+  },
   components: {
     AppHeader,
   },
