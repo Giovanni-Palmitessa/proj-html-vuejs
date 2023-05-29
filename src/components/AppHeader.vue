@@ -1,4 +1,6 @@
 <script>
+import HeaderNavbar from "./HeaderNavbar.vue";
+
 export default {
   data() {
     return {
@@ -27,21 +29,15 @@ export default {
       ],
     };
   },
+  components: {
+    HeaderNavbar,
+  },
 };
 </script>
 <template>
   <header>
     <div class="container">
-      <ul class="navbar">
-        <li>
-          <a href="#">
-            <img src="../assets/img/logo-autocar11.png" alt="Logo Autocar" />
-          </a>
-        </li>
-        <li>
-          <a href="#">{{ navbarList }}</a>
-        </li>
-      </ul>
+      <HeaderNavbar />
     </div>
   </header>
 </template>
@@ -49,8 +45,5 @@ export default {
 <style lang="scss" scoped>
 header {
   height: 70px;
-  img {
-    width: 15%;
-  }
 }
 </style>
