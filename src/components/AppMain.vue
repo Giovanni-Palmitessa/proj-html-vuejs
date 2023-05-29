@@ -1,8 +1,15 @@
 <script>
-export default {};
+import SmallCard from "./SmallCard.vue";
+
+export default {
+  components: {
+    SmallCard,
+  },
+};
 </script>
 <template>
   <main>
+    <!-- JUMBOTRON -->
     <section class="jumbo">
       <div class="container">
         <div class="jumbo-details">
@@ -10,6 +17,46 @@ export default {};
           <p class="jumbo-second">Find the right price and dealer.</p>
           <p class="jumbo-second">Learn More -></p>
           <!--AGGIUNGERE ICONA FRECCIA -->
+        </div>
+      </div>
+    </section>
+    <!-- LISTA PER FILTRARE -->
+    <section>
+      <div class="container">
+        <div class="filterChoose">
+          <input type="text" placeholder="Keywords" />
+
+          <input type="text" placeholder="Location" />
+
+          <select>
+            <option value="">All Categories</option>
+          </select>
+
+          <select>
+            <option value="">Brand</option>
+          </select>
+
+          <select>
+            <option value="">Fuel Type</option>
+          </select>
+
+          <select>
+            <option value="">Transmission</option>
+          </select>
+
+          <select>
+            <option value="">Form</option>
+          </select>
+
+          <button>Search</button>
+        </div>
+      </div>
+    </section>
+    <!-- CARDS PER FILTRARE CON IMMAGINE -->
+    <section>
+      <div class="container">
+        <div class="smallCardList">
+          <SmallCard />
         </div>
       </div>
     </section>
@@ -40,5 +87,11 @@ export default {};
     font-size: 1.3rem;
     font-weight: 600;
   }
+}
+
+.filterChoose {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 </style>

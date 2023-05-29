@@ -51,6 +51,11 @@ export default {
       ],
     };
   },
+  methods: {
+    getImagePath(img) {
+      return new URL(img, import.meta.url).href;
+    },
+  },
   components: {
     MenuList,
     MenuListImg,
@@ -78,7 +83,7 @@ export default {
           v-for="listImg in arrLiImgNavbar"
           :key="listImg.menuList"
           :menuListImg="listImg.menuList"
-          :urlImg="listImg.img"
+          :urlImg="getImagePath(listImg.img)"
         />
       </ul>
     </div>
@@ -91,6 +96,7 @@ header {
     height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 0.5rem;
   }
   height: 70px;
