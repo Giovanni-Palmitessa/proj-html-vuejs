@@ -134,4 +134,8 @@ export default {
   justify-content: space-between;
   padding: 0.5rem;
 }
+
+.smallCardList {
+  display: flex;
+}
 </style>
