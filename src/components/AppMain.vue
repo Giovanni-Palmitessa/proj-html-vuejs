@@ -2,6 +2,41 @@
 import SmallCard from "./SmallCard.vue";
 
 export default {
+  data() {
+    return {
+      arrSmallCard: [
+        {
+          type: "Cabrio",
+          img: "../assets/img/cabrio.jpg",
+        },
+        {
+          type: "Coupe",
+          img: "../assets/img/coupe.jpg",
+        },
+        {
+          type: "Hatchback",
+          img: "../assets/img/hatchback.jpg",
+        },
+        {
+          type: "Pick Up",
+          img: "../assets/img/pickup.jpg",
+        },
+        {
+          type: "Sedan",
+          img: "../assets/img/sedan.jpg",
+        },
+        {
+          type: "SUV",
+          img: "../assets/img/suv.jpg",
+        },
+      ],
+    };
+  },
+  methods: {
+    getImagePath(img) {
+      return new URL(img, import.meta.url).href;
+    },
+  },
   components: {
     SmallCard,
   },
