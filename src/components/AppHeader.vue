@@ -1,5 +1,6 @@
 <script>
 import MenuList from "./MenuList.vue";
+import MenuListImg from "./MenuListImg.vue";
 
 export default {
   data() {
@@ -30,7 +31,7 @@ export default {
           menuList: "Blog",
         },
         {
-          number: 1,
+          number: 7,
           menuList: "Contact",
         },
       ],
@@ -52,22 +53,32 @@ export default {
   },
   components: {
     MenuList,
+    MenuListImg,
   },
 };
 </script>
 <template>
   <header>
     <div class="container">
-      <ul>
+      <ul class="navbar">
         <li>
           <a href="#"
-            ><img src="../assets/img/logo-autocar11.png" alt="Logo Autocar"
+            ><img
+              src="../assets/img/logo-autocar11.png"
+              alt="Logo Autocar"
+              class="logo"
           /></a>
         </li>
         <MenuList
           v-for="list in arrLiNavbar"
           :key="list.number"
           :menuList="list.menuList"
+        />
+        <MenuListImg
+          v-for="listImg in arrLiImgNavbar"
+          :key="listImg.menuList"
+          :menuListImg="listImg.menuList"
+          :urlImg="listImg.img"
         />
       </ul>
     </div>
@@ -76,6 +87,15 @@ export default {
 
 <style lang="scss" scoped>
 header {
+  .navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
   height: 70px;
+  .logo {
+    width: 40%;
+  }
 }
 </style>

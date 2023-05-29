@@ -1,7 +1,6 @@
 <script>
 export default {
   props: {
-    urlImg: String,
     menuList: String,
   },
 };
