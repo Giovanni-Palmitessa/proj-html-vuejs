@@ -4,7 +4,14 @@ export default {};
 <template>
   <main>
     <section class="jumbo">
-      <div class="container"></div>
+      <div class="container">
+        <div class="jumbo-details">
+          <p>Buy And Sell Your Car At Its Value</p>
+          <p>Find the right price and dealer.</p>
+          <p>Learn More -></p>
+          <!--AGGIUNGERE ICONA FRECCIA -->
+        </div>
+      </div>
     </section>
   </main>
 </template>
