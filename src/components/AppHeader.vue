@@ -1,17 +1,38 @@
 <script>
-import HeaderNavbar from "./HeaderNavbar.vue";
+import MenuList from "./MenuList.vue";
 
 export default {
   data() {
     return {
       arrLiNavbar: [
-        "Home",
-        "About Us",
-        "Vehicles",
-        "Dealers",
-        "Packages",
-        "blog",
-        "Contact",
+        {
+          number: 1,
+          menuList: "Home",
+        },
+        {
+          number: 2,
+          menuList: "About Us",
+        },
+        {
+          number: 3,
+          menuList: "Vehicles",
+        },
+        {
+          number: 4,
+          menuList: "Dealers",
+        },
+        {
+          number: 5,
+          menuList: "Packages",
+        },
+        {
+          number: 6,
+          menuList: "Blog",
+        },
+        {
+          number: 1,
+          menuList: "Contact",
+        },
       ],
       arrLiImgNavbar: [
         {
@@ -30,14 +51,25 @@ export default {
     };
   },
   components: {
-    HeaderNavbar,
+    MenuList,
   },
 };
 </script>
 <template>
   <header>
     <div class="container">
-      <HeaderNavbar />
+      <ul>
+        <li>
+          <a href="#"
+            ><img src="../assets/img/logo-autocar11.png" alt="Logo Autocar"
+          /></a>
+        </li>
+        <MenuList
+          v-for="list in arrLiNavbar"
+          :key="list.number"
+          :menuList="list.menuList"
+        />
+      </ul>
     </div>
   </header>
 </template>
