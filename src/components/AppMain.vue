@@ -206,7 +206,9 @@ export default {
               <p>Special Expert Team</p>
             </div>
           </div>
-          <div class="info-right"></div>
+          <div class="info-right">
+            <h2>Whant to buy or sell a vehicle?</h2>
+          </div>
         </div>
       </div>
     </section>
@@ -270,7 +272,9 @@ export default {
 
 .contents {
   display: flex;
+  gap: 2rem;
   height: 100vh;
+  margin-top: 5rem;
   .car-left {
     background-image: url(../assets/img/circle-auto-car-1.png);
     background-size: cover;
@@ -301,6 +305,12 @@ export default {
         bottom: 140px;
         right: 50px;
       }
+    }
+  }
+  .info-right {
+    h2 {
+      font-size: 1.8rem;
+      padding-top: 5rem;
     }
   }
 }
