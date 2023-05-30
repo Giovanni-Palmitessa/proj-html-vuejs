@@ -225,4 +225,9 @@ export default {
   display: flex;
   padding-bottom: 1rem;
 }
+
+.carShop {
+  display: flex;
+  flex-wrap: wrap;
+}
 </style>
