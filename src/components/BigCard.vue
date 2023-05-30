@@ -39,6 +39,7 @@ export default {
   width: calc(100% / 4);
   padding: 0.5rem;
   border: 1px solid gray;
+  margin-bottom: 1rem;
   img {
     width: 100%;
     margin-bottom: 8px;
