@@ -87,7 +87,7 @@ export default {
         <div class="ftr-center">
           <h2>Join Our Newsletter</h2>
           <p>Subscribe to be informed about our services and products.</p>
-          <input type="text" placeholder="Your Email Adress" />
+          <input type="email" placeholder="Your Email Adress" />
           <div class="white-btn">Subscribe</div>
         </div>
         <div class="ftr-right">
@@ -131,6 +131,7 @@ footer {
     .ftr-left {
       display: flex;
       flex-direction: column;
+      flex-basis: 30%;
       img {
         width: 40%;
         margin-bottom: 1rem;
@@ -156,6 +157,7 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+      flex-basis: 40%;
       p {
         font-size: 0.8rem;
       }
@@ -176,6 +178,7 @@ footer {
     .ftr-right {
       display: flex;
       gap: 3rem;
+      flex-basis: 30%;
       .list {
         list-style: square;
       }
