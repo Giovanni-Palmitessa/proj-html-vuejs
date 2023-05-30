@@ -38,6 +38,12 @@ export default {};
             /></a>
           </div>
         </div>
+        <div class="ftr-center">
+          <h2>Join Our Newsletter</h2>
+          <p>Subscribe to be informed about our services and products.</p>
+          <input type="text" placeholder="Your Email Adress" />
+          <div class="white-btn">Subscribe</div>
+        </div>
       </div>
     </div>
   </footer>
@@ -74,6 +80,27 @@ footer {
         font-size: 1.5rem;
         a {
           color: $white-main;
+        }
+      }
+    }
+    .ftr-center {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      p {
+        font-size: 0.8rem;
+      }
+      input {
+        padding: 1.3rem;
+        border-radius: 5px;
+      }
+      .white-btn {
+        background-color: $white-main;
+        text-align: center;
+        color: $gray-main;
+        padding: 1.3rem;
+        &:hover {
+          cursor: pointer;
         }
       }
     }
