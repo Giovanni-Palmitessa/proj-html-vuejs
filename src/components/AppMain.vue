@@ -313,6 +313,8 @@ export default {
             <h2>Resent Articles</h2>
             <p>Useful information about car.</p>
           </div>
+
+          <div class="resent-cards"></div>
         </div>
       </div>
     </section>
@@ -504,6 +506,10 @@ export default {
       margin-bottom: 1rem;
       font-size: 0.8rem;
     }
+  }
+  .resent-cards {
+    display: flex;
+    gap: 2rem;
   }
 }
 </style>
