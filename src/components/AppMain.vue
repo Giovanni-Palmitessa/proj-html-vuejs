@@ -298,6 +298,19 @@ export default {
             :name="customCard.customName"
             :image="getImagePath(customCard.customImg)"
           />
+          <!-- BISOGNA AGGIUNGERE LE VIRGOLETTE NELLA CARD -->
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="resent-articles">
+          <div class="resent-title">
+            <div class="like">
+              <font-awesome-icon icon="fa-solid fa-thumbs-up" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -459,6 +472,27 @@ export default {
     display: flex;
     gap: 1rem;
     margin-top: 3rem;
+  }
+}
+
+.resent-articles {
+  text-align: center;
+  .resent-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .like {
+      color: $white-main;
+      background-color: $black-main;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin-top: 5rem;
+    }
   }
 }
 </style>
