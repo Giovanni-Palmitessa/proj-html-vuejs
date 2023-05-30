@@ -126,6 +126,32 @@ export default {
           customName: "Elizabeth",
         },
       ],
+      arrResendCar: [
+        {
+          resendImg: "../assets/img/news-autocar-1-300x180.jpg",
+          resendBrand: "Why is BMW loved?",
+          resendArticle:
+            "BMWs have a different line with their designs and almost [...]",
+        },
+        {
+          resendImg: "../assets/img/news-autocar-2-300x180.jpg",
+          resendBrand: "How solid is Audi?",
+          resendArticle:
+            "According to Euro NCAP data with different test organization, there [...]",
+        },
+        {
+          resendImg: "../assets/img/news-autocar-6-300x180.jpg",
+          resendBrand: "What brand is Skoda?",
+          resendArticle:
+            "Skoda is one of the leading automotive manufacturers on the [...]",
+        },
+        {
+          resendImg: "../assets/img/news-autocar-6-300x180.jpg",
+          resendBrand: "Is the Auris diesel?",
+          resendArticle:
+            "You will have a quieter vehicle that burn less than [...]",
+        },
+      ],
     };
   },
   methods: {
