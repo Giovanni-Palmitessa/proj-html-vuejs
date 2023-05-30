@@ -310,6 +310,8 @@ export default {
             <div class="like">
               <font-awesome-icon icon="fa-solid fa-thumbs-up" />
             </div>
+            <h2>Resent Articles</h2>
+            <p>Useful information about car.</p>
           </div>
         </div>
       </div>
@@ -492,6 +494,15 @@ export default {
       justify-content: center;
       font-size: 3rem;
       margin-top: 5rem;
+    }
+    h2 {
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
     }
   }
 }
