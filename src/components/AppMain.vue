@@ -7,6 +7,7 @@ import ResendCarCard from "./ResendCarCard.vue";
 export default {
   data() {
     return {
+      activeIndex: 0,
       arrJumboImg: [
         {
           jumboImg: "../assets/img/slider-autocar-5.jpg",
@@ -166,6 +167,23 @@ export default {
     getImagePath(img) {
       return new URL(img, import.meta.url).href;
     },
+    showNextSlide() {
+      this.activeIndex++;
+
+      if (this.activeIndex >= this.arrJumboImg.length) {
+        this.activeIndex = 0;
+      }
+    },
+    showPrevSlide() {
+      this.activeIndex--;
+
+      if (this.activeIndex < 0) {
+        this.activeIndex = this.arrJumboImg.length - 1;
+      }
+    },
+    setActiveIndex(index) {
+      this.activeIndex = index;
+    },
   },
   components: {
     SmallCard,
@@ -178,7 +196,7 @@ export default {
 <template>
   <main>
     <!-- JUMBOTRON -->
-    <section class="jumbo">
+    <section class="jumbo" :class="{ active: index == activeIndex }">
       <div class="container">
         <div class="jumbo-details">
           <p class="jumbo-main">Buy And Sell Your Car At Its Value</p>
@@ -188,11 +206,11 @@ export default {
           </p>
         </div>
       </div>
-      <div class="chevron left">
+      <div class="chevron left" @click="showPrevSlide">
         <font-awesome-icon icon="fa-solid fa-chevron-left" />
       </div>
 
-      <div class="chevron right">
+      <div class="chevron right" @click="showNextSlide">
         <font-awesome-icon icon="fa-solid fa-chevron-right" />
       </div>
     </section>
@@ -389,7 +407,7 @@ export default {
   background-size: cover;
   color: $white-main;
   position: relative;
-  &.toggle {
+  &.active {
     background-image: url(../assets/img/slider-autocar-6.jpg);
   }
   .jumbo-main {
