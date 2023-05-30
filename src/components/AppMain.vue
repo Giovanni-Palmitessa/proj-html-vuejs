@@ -7,6 +7,14 @@ import ResendCarCard from "./ResendCarCard.vue";
 export default {
   data() {
     return {
+      arrJumboImg: [
+        {
+          jumboImg: "../assets/img/slider-autocar-5.jpg",
+        },
+        {
+          jumboImg: "../assets/img/slider-autocar-6.jpg",
+        },
+      ],
       arrSmallCard: [
         {
           type: "Cabrio",
