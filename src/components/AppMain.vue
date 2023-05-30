@@ -184,6 +184,9 @@ export default {
             :imgUrl="getImagePath(bigCard.carThumb)"
           />
         </div>
+        <div class="showMore">
+          Show All Cars <font-awesome-icon icon="fa-solid fa-arrow-right" />
+        </div>
       </div>
     </section>
   </main>
@@ -229,5 +232,18 @@ export default {
 .carShop {
   display: flex;
   flex-wrap: wrap;
+}
+
+.showMore {
+  background-color: $black-main;
+  padding: 1rem;
+  text-align: center;
+  color: $white-main;
+  font-weight: 700;
+  width: 200px;
+  margin-inline: auto;
+  &:hover {
+    cursor: pointer;
+  }
 }
 </style>
