@@ -189,6 +189,18 @@ export default {
         </div>
       </div>
     </section>
+
+    <!-- VUOI VENDERE LA TUA AUTO? -->
+    <section>
+      <div class="container-small">
+        <div class="contents">
+          <div class="car-left">
+            <img src="../assets/img/aoutcar-about-1.png" alt="Auto about" />
+          </div>
+          <div class="info-right"></div>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -244,6 +256,15 @@ export default {
   margin-inline: auto;
   &:hover {
     cursor: pointer;
+  }
+}
+
+.contents {
+  display: flex;
+  height: 100vh;
+  .car-left {
+    background-image: url(../assets/img/circle-auto-car-1.png);
+    background-size: cover;
   }
 }
 </style>
