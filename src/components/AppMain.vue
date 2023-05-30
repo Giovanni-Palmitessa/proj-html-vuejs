@@ -179,6 +179,13 @@ export default {
           <!--AGGIUNGERE ICONA FRECCIA -->
         </div>
       </div>
+      <div class="chevron left">
+        <font-awesome-icon icon="fa-solid fa-chevron-left" />
+      </div>
+
+      <div class="chevron right">
+        <font-awesome-icon icon="fa-solid fa-chevron-right" />
+      </div>
     </section>
     <!-- LISTA PER FILTRARE -->
     <section>
@@ -330,7 +337,7 @@ export default {
         </div>
       </div>
     </section>
-
+    <!-- ARTICOLI MARCHE MACCHINE -->
     <section>
       <div class="container">
         <div class="resent-articles">
@@ -361,7 +368,7 @@ export default {
 @use "../assets/partials/variables" as *;
 
 .jumbo-details {
-  height: 100vh;
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -372,6 +379,7 @@ export default {
   background-image: url(../assets/img/slider-autocar-5.jpg);
   background-size: cover;
   color: $white-main;
+  position: relative;
   .jumbo-main {
     font-size: 3rem;
     font-weight: 800;
@@ -380,6 +388,26 @@ export default {
   .jumbo-second {
     font-size: 1.3rem;
     font-weight: 600;
+  }
+  .chevron {
+    color: $white-main;
+    font-size: 2rem;
+    &.left {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &.right {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 
