@@ -208,6 +208,12 @@ export default {
           </div>
           <div class="info-right">
             <h2>Whant to buy or sell a vehicle?</h2>
+            <p>
+              You can put your vehicles for sale by registering on our website.
+              Whether you are a dealer or sell personally. Sell your vehicle in
+              the most profitable way. With this system, which has millions of
+              members, you will be able to buy and sell vehicles very quickly.
+            </p>
           </div>
         </div>
       </div>
@@ -311,6 +317,10 @@ export default {
     h2 {
       font-size: 1.8rem;
       padding-top: 5rem;
+      padding-bottom: 1rem;
+    }
+    p {
+      line-height: 30px;
     }
   }
 }
