@@ -173,7 +173,16 @@ export default {
     <section>
       <div class="container">
         <div class="carShop">
-          <BigCard />
+          <BigCard
+            v-for="bigCard in arrBigCard"
+            :key="bigCard.carName"
+            :name="bigCard.carName"
+            :type="bigCard.carType"
+            :price="bigCard.carPrice"
+            :brand="bigCard.carBrand"
+            :fuel="bigCard.carFuel"
+            :imgUrl="getImagePath(bigCard.img)"
+          />
         </div>
       </div>
     </section>
