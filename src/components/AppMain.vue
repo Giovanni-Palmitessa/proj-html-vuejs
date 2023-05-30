@@ -245,6 +245,13 @@ export default {
         </div>
       </div>
     </section>
+
+    <!-- RECENSIONI CLIENTI -->
+    <section class="customers">
+      <div class="container">
+        <div class="titleCustomers"></div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -379,5 +386,11 @@ export default {
       }
     }
   }
+}
+
+.customers {
+  height: 100vh;
+  background-image: url(../assets/img/comment-bg-autocar.jpg);
+  background-size: cover;
 }
 </style>
