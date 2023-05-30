@@ -8,14 +8,14 @@ export default {
   data() {
     return {
       activeIndex: 0,
-      arrJumboImg: [
-        {
-          jumboImg: "../assets/img/slider-autocar-5.jpg",
-        },
-        {
-          jumboImg: "../assets/img/slider-autocar-6.jpg",
-        },
-      ],
+      // // arrJumboImg: [
+      // //   {
+      // //     jumboImg: "../assets/img/slider-autocar-5.jpg",
+      // //   },
+      // //   {
+      // //     jumboImg: "../assets/img/slider-autocar-6.jpg",
+      // //   },
+      // ],
       arrSmallCard: [
         {
           type: "Cabrio",
@@ -196,6 +196,7 @@ export default {
 <template>
   <main>
     <!-- JUMBOTRON -->
+    <!-- da qui giusto -->
     <section class="jumbo" :class="{ active: index == activeIndex }">
       <div class="container">
         <div class="jumbo-details">
@@ -214,6 +215,8 @@ export default {
         <font-awesome-icon icon="fa-solid fa-chevron-right" />
       </div>
     </section>
+    <!-- a qui giusto -->
+
     <!-- LISTA PER FILTRARE -->
     <section>
       <div class="container">
