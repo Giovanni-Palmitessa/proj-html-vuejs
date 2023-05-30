@@ -308,6 +308,7 @@ export default {
   gap: 2rem;
   height: 100vh;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   .car-left {
     background-image: url(../assets/img/circle-auto-car-1.png);
     background-size: cover;
