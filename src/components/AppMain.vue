@@ -478,7 +478,7 @@ export default {
     }
     .know-btn {
       width: 300px;
-      color: white;
+      color: $white-main;
       font-weight: 700;
       text-align: center;
       background-color: $black-main;
@@ -545,7 +545,7 @@ export default {
   }
   .resent-cards {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
   }
 }
 </style>
