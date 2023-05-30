@@ -175,8 +175,9 @@ export default {
         <div class="jumbo-details">
           <p class="jumbo-main">Buy And Sell Your Car At Its Value</p>
           <p class="jumbo-second">Find the right price and dealer.</p>
-          <p class="jumbo-second">Learn More -></p>
-          <!--AGGIUNGERE ICONA FRECCIA -->
+          <p class="jumbo-second">
+            Learn More <font-awesome-icon icon="fa-solid fa-arrow-right" />
+          </p>
         </div>
       </div>
       <div class="chevron left">
@@ -380,6 +381,9 @@ export default {
   background-size: cover;
   color: $white-main;
   position: relative;
+  &.toggle {
+    background-image: url(../assets/img/slider-autocar-6.jpg);
+  }
   .jumbo-main {
     font-size: 3rem;
     font-weight: 800;
