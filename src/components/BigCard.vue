@@ -7,12 +7,12 @@ export default {};
       src="../assets/img/bmw-8-series-convertible-technical-data-sp-desktop-400x300.jpg"
       alt=""
     />
-    <p>BMW M9</p>
+    <p>BMW M9 <font-awesome-icon icon="fa-solid fa-circle-check" /></p>
     <p>Cabrio</p>
     <div class="shop">
-      <p>34000</p>
-      <p>BMW</p>
-      <p>Electric</p>
+      <p><font-awesome-icon icon="fa-solid fa-dollar-sign" /> 34000</p>
+      <p><font-awesome-icon icon="fa-solid fa-car" /> BMW</p>
+      <p><font-awesome-icon icon="fa-solid fa-gas-pump" /> Electric</p>
     </div>
   </div>
 </template>
