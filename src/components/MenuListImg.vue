@@ -20,6 +20,7 @@ li {
   .black {
     background-color: black;
     padding: 2rem;
+    height: 50px;
     display: flex;
     align-items: center;
     gap: 10px;
