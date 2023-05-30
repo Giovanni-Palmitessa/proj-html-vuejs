@@ -1,5 +1,14 @@
 <script>
-export default {};
+export default {
+  props: {
+    imgUrl: String,
+    name: String,
+    type: String,
+    price: String,
+    brand: String,
+    fuel: String,
+  },
+};
 </script>
 <template>
   <div class="bigCard">
