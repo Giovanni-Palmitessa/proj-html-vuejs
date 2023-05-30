@@ -1,5 +1,32 @@
 <script>
-export default {};
+import FooterLinksAccount from "./FooterLinksAccount.vue";
+
+export default {
+  data() {
+    return {
+      arrMyAccount: [
+        {
+          liFtr: "My account",
+        },
+        {
+          liFtr: "Checkout",
+        },
+        {
+          liFtr: "Cart",
+        },
+        {
+          liFtr: "Packages",
+        },
+        {
+          liFtr: "Add Car",
+        },
+      ],
+    };
+  },
+  components: {
+    FooterLinksAccount,
+  },
+};
 </script>
 <template>
   <footer>
@@ -43,6 +70,29 @@ export default {};
           <p>Subscribe to be informed about our services and products.</p>
           <input type="text" placeholder="Your Email Adress" />
           <div class="white-btn">Subscribe</div>
+        </div>
+        <div class="ftr-right">
+          <div class="myAccount">
+            <h2>My Account</h2>
+            <ul class="list">
+              <FooterLinksAccount
+                v-for="links in arrMyAccount"
+                :key="links.liFtr"
+                :links="links.liFtr"
+              />
+            </ul>
+          </div>
+
+          <div class="quickLinks">
+            <h2>Quick Links</h2>
+            <ul class="list">
+              <FooterLinksAccount
+                v-for="links in arrMyAccount"
+                :key="links.liFtr"
+                :links="links.liFtr"
+              />
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -102,6 +152,11 @@ footer {
         &:hover {
           cursor: pointer;
         }
+      }
+    }
+    .ftr-right {
+      .list {
+        list-style: square;
       }
     }
   }
