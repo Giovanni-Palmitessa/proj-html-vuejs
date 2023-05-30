@@ -343,7 +343,13 @@ export default {
           </div>
 
           <div class="resent-cards">
-            <ResendCarCard />
+            <ResendCarCard
+              v-for="resendCar in arrResendCar"
+              :key="resendCar.resendBrand"
+              :img="getImagePath(resendCar.resendImg)"
+              :brand="resendCar.resendBrand"
+              :article="resendCar.resendArticle"
+            />
           </div>
         </div>
       </div>

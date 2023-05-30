@@ -35,10 +35,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../assets/partials/variables" as *;
 .bigCard {
   width: calc(100% / 4);
   padding: 0.5rem;
-  border: 1px solid gray;
+  border: 1px solid $gray-main;
   margin-bottom: 1rem;
   img {
     width: 100%;
