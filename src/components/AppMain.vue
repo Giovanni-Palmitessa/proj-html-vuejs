@@ -249,7 +249,16 @@ export default {
     <!-- RECENSIONI CLIENTI -->
     <section class="customers">
       <div class="container">
-        <div class="titleCustomers"></div>
+        <div class="titleCustomers">
+          <font-awesome-icon icon="fa-regular fa-thumbs-up" class="big-icon" />
+          <div class="stars">
+            <font-awesome-icon
+              icon="fa-regular fa-star"
+              v-for="star in 3"
+              :key="star"
+            />
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -392,5 +401,13 @@ export default {
   height: 100vh;
   background-image: url(../assets/img/comment-bg-autocar.jpg);
   background-size: cover;
+  .titleCustomers {
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+    .big-icon {
+      font-size: 3rem;
+    }
+  }
 }
 </style>
