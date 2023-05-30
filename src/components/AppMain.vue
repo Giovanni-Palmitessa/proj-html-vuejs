@@ -236,6 +236,11 @@ export default {
                 </p>
               </div>
             </div>
+
+            <div class="know-btn">
+              Get to know us
+              <font-awesome-icon icon="fa-solid fa-arrow-right" />
+            </div>
           </div>
         </div>
       </div>
@@ -359,6 +364,17 @@ export default {
         margin-bottom: 0.7rem;
         font-size: 1.5rem;
         font-weight: 700;
+      }
+    }
+    .know-btn {
+      width: 300px;
+      color: white;
+      font-weight: 700;
+      text-align: center;
+      background-color: $black-main;
+      padding: 1.5rem 2rem;
+      &:hover {
+        cursor: pointer;
       }
     }
   }
