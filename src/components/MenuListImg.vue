@@ -8,20 +8,30 @@ export default {
 </script>
 <template>
   <li>
-    <img :src="urlImg" :alt="menuListImg" />
-    <a href="#">{{ menuListImg }}</a>
+    <div class="black">
+      <img :src="urlImg" :alt="menuListImg" />
+      <a href="#">{{ menuListImg }}</a>
+    </div>
   </li>
 </template>
 
 <style lang="scss" scoped>
 li {
-  background-color: black;
-  padding: 2rem;
-}
-a {
-  color: white;
-}
-img {
-  width: 30px;
+  .black {
+    background-color: black;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    img {
+      width: 30px;
+      filter: grayscale(1) invert(1);
+    }
+    a {
+      color: white;
+      font-weight: 600;
+    }
+  }
 }
 </style>
