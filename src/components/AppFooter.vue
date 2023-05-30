@@ -1,5 +1,6 @@
 <script>
 import FooterLinksAccount from "./FooterLinksAccount.vue";
+import FooterLinksQuick from "./FooterLinksQuick.vue";
 
 export default {
   data() {
@@ -21,10 +22,28 @@ export default {
           liFtr: "Add Car",
         },
       ],
+      arrQuickLinks: [
+        {
+          liFtr: "Home",
+        },
+        {
+          liFtr: "About Us",
+        },
+        {
+          liFtr: "Blog",
+        },
+        {
+          liFtr: "Contact",
+        },
+        {
+          liFtr: "Refund & Returns",
+        },
+      ],
     };
   },
   components: {
     FooterLinksAccount,
+    FooterLinksQuick,
   },
 };
 </script>
@@ -86,8 +105,8 @@ export default {
           <div class="quickLinks">
             <h2>Quick Links</h2>
             <ul class="list">
-              <FooterLinksAccount
-                v-for="links in arrMyAccount"
+              <FooterLinksQuick
+                v-for="links in arrQuickLinks"
                 :key="links.liFtr"
                 :links="links.liFtr"
               />
@@ -155,6 +174,8 @@ footer {
       }
     }
     .ftr-right {
+      display: flex;
+      gap: 3rem;
       .list {
         list-style: square;
       }
