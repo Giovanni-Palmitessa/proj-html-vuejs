@@ -8,7 +8,7 @@ export default {
 </script>
 <template>
   <div class="card">
-    <img :src="urlImg" alt="" />
+    <img :src="urlImg" :alt="carType" />
     <p class="type">{{ carType }}</p>
     <p class="listings">2 listings</p>
   </div>

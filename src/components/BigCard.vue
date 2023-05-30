@@ -12,21 +12,23 @@ export default {
 </script>
 <template>
   <div class="bigCard">
-    <img
-      src="../assets/img/bmw-8-series-convertible-technical-data-sp-desktop-400x300.jpg"
-      alt=""
-    />
+    <img :src="imgUrl" :alt="name" />
     <p>
-      BMW M9 <font-awesome-icon icon="fa-solid fa-circle-check" class="icon" />
+      {{ name }}
+      <font-awesome-icon icon="fa-solid fa-circle-check" class="icon" />
     </p>
-    <p class="carType">Cabrio</p>
+    <p class="carType">{{ type }}</p>
     <div class="shop">
       <p>
-        <font-awesome-icon icon="fa-solid fa-dollar-sign" class="icon" /> 34000
+        <font-awesome-icon icon="fa-solid fa-dollar-sign" class="icon" />
+        {{ price }}
       </p>
-      <p><font-awesome-icon icon="fa-solid fa-car" class="icon" /> BMW</p>
       <p>
-        <font-awesome-icon icon="fa-solid fa-gas-pump" class="icon" /> Electric
+        <font-awesome-icon icon="fa-solid fa-car" class="icon" /> {{ brand }}
+      </p>
+      <p>
+        <font-awesome-icon icon="fa-solid fa-gas-pump" class="icon" />
+        {{ fuel }}
       </p>
     </div>
   </div>

@@ -95,7 +95,7 @@ export default {
           carPrice: "32,000",
           carBrand: "Volswagen",
           carFuel: "Diesel",
-          carThumb: "../assets/volkswagen-passat-1280x720-1-400x300.jpg",
+          carThumb: "../assets/img/volkswagen-passat-1280x720-1-400x300.jpg",
         },
       ],
     };
@@ -181,7 +181,7 @@ export default {
             :price="bigCard.carPrice"
             :brand="bigCard.carBrand"
             :fuel="bigCard.carFuel"
-            :imgUrl="getImagePath(bigCard.img)"
+            :imgUrl="getImagePath(bigCard.carThumb)"
           />
         </div>
       </div>
