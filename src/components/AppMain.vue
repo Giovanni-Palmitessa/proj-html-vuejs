@@ -2,6 +2,7 @@
 import SmallCard from "./SmallCard.vue";
 import BigCard from "./BigCard.vue";
 import CustomersCard from "./CustomersCard.vue";
+import ResendCarCard from "./ResendCarCard.vue";
 
 export default {
   data() {
@@ -136,6 +137,7 @@ export default {
     SmallCard,
     BigCard,
     CustomersCard,
+    ResendCarCard,
   },
 };
 </script>
@@ -314,7 +316,9 @@ export default {
             <p>Useful information about car.</p>
           </div>
 
-          <div class="resent-cards"></div>
+          <div class="resent-cards">
+            <ResendCarCard />
+          </div>
         </div>
       </div>
     </section>
