@@ -25,6 +25,14 @@ export default {
   border-radius: 15px;
   img {
     width: 30%;
+    margin: 1rem 0;
+  }
+  p {
+    margin: 1.5rem 0;
+    max-width: 250px;
+    margin-inline: auto;
+    line-height: 30px;
+    font-weight: 100;
   }
 }
 </style>
