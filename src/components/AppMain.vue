@@ -214,6 +214,17 @@ export default {
               the most profitable way. With this system, which has millions of
               members, you will be able to buy and sell vehicles very quickly.
             </p>
+            <img src="../assets/img/divider.jpg" alt="divider" />
+            <div class="vehicles">
+              <font-awesome-icon icon="fa-solid fa-car" class="car-icon" />
+              <div class="know-us">
+                <h3>Model Vehicles</h3>
+                <p>
+                  We are sure that you will find vehicles of suitable models on
+                  our website.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -321,6 +332,22 @@ export default {
     }
     p {
       line-height: 30px;
+    }
+    img {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .vehicles {
+      display: flex;
+      gap: 0.7rem;
+      .car-icon {
+        font-size: 4rem;
+      }
+      h3 {
+        margin-bottom: 0.7rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
     }
   }
 }
