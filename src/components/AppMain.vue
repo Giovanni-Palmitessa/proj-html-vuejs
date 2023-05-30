@@ -98,6 +98,32 @@ export default {
           carThumb: "../assets/img/volkswagen-passat-1280x720-1-400x300.jpg",
         },
       ],
+      arrCustomCard: [
+        {
+          customComment:
+            "We are a gallery vehicle dealer. Before we met this site, our sales were sluggish.",
+          customImg: "../assets/img/man1.png",
+          customName: "Adam",
+        },
+        {
+          customComment:
+            "One of the quality websites I apply to rent a car. There are hundreds of different tools.",
+          customImg: "../assets/img/testimonial2-1.png",
+          customName: "Cristiane",
+        },
+        {
+          customComment:
+            "I was trying to sell my car. And I put it here and sold it for more than I was worth.",
+          customImg: "../assets/img/man2.png",
+          customName: "Robert",
+        },
+        {
+          customComment:
+            "A fast and reliable vehicle selling site. Rare quality website with hundreds of model vehicles.",
+          customImg: "../assets/img/testimonial4-1.png",
+          customName: "Elizabeth",
+        },
+      ],
     };
   },
   methods: {
@@ -259,7 +285,10 @@ export default {
             />
           </div>
           <h2>What Are Our Customers Saying?</h2>
+          <p>Opinions from our happy customers.</p>
         </div>
+
+        <div class="customCards"></div>
       </div>
     </section>
   </main>
@@ -411,9 +440,13 @@ export default {
     }
     h2 {
       margin-top: 1.5rem;
+      margin-bottom: 1rem;
       font-size: 1.5rem;
       font-weight: 700;
     }
+  }
+  .customCards {
+    display: flex;
   }
 }
 </style>
