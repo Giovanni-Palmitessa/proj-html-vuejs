@@ -1,6 +1,7 @@
 <script>
 import SmallCard from "./SmallCard.vue";
 import BigCard from "./BigCard.vue";
+import CustomersCard from "./CustomersCard.vue";
 
 export default {
   data() {
@@ -134,6 +135,7 @@ export default {
   components: {
     SmallCard,
     BigCard,
+    CustomersCard,
   },
 };
 </script>
@@ -288,7 +290,9 @@ export default {
           <p>Opinions from our happy customers.</p>
         </div>
 
-        <div class="customCards"></div>
+        <div class="customCards">
+          <CustomersCard />
+        </div>
       </div>
     </section>
   </main>
