@@ -196,6 +196,15 @@ export default {
         <div class="contents">
           <div class="car-left">
             <img src="../assets/img/aoutcar-about-1.png" alt="Auto about" />
+            <div class="about top">
+              <p class="number">2 4</p>
+              <p>Years of Experience</p>
+            </div>
+
+            <div class="about bottom">
+              <p class="number">2 4 0</p>
+              <p>Special Expert Team</p>
+            </div>
           </div>
           <div class="info-right"></div>
         </div>
@@ -265,6 +274,34 @@ export default {
   .car-left {
     background-image: url(../assets/img/circle-auto-car-1.png);
     background-size: cover;
+    position: relative;
+    .about {
+      background-color: $black-main;
+      color: $white-main;
+      text-align: center;
+      width: 150px;
+      height: 150px;
+      font-weight: 800;
+      border-radius: 50rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .number {
+        font-size: 2rem;
+      }
+      &.top {
+        position: absolute;
+        top: 100px;
+        left: 70px;
+      }
+
+      &.bottom {
+        position: absolute;
+        bottom: 140px;
+        right: 50px;
+      }
+    }
   }
 }
 </style>
