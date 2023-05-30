@@ -258,6 +258,7 @@ export default {
               :key="star"
             />
           </div>
+          <h2>What Are Our Customers Saying?</h2>
         </div>
       </div>
     </section>
@@ -407,6 +408,11 @@ export default {
     padding-top: 3rem;
     .big-icon {
       font-size: 3rem;
+    }
+    h2 {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
     }
   }
 }
