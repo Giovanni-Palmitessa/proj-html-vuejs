@@ -458,6 +458,7 @@ export default {
   .customCards {
     display: flex;
     gap: 1rem;
+    margin-top: 3rem;
   }
 }
 </style>
