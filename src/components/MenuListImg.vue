@@ -14,7 +14,14 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+li {
+  background-color: black;
+  padding: 2rem;
+}
+a {
+  color: white;
+}
 img {
-  width: 50%;
+  width: 30px;
 }
 </style>

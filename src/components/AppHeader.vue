@@ -101,7 +101,7 @@ header {
   }
   height: 70px;
   .logo {
-    width: 40%;
+    height: 70px;
   }
 }
 </style>

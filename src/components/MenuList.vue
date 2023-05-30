@@ -11,4 +11,8 @@ export default {
   </li>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+a {
+  color: black;
+}
+</style>
