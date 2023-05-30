@@ -291,7 +291,13 @@ export default {
         </div>
 
         <div class="customCards">
-          <CustomersCard />
+          <CustomersCard
+            v-for="customCard in arrCustomCard"
+            :key="customCard.customName"
+            :comment="customCard.customComment"
+            :name="customCard.customName"
+            :image="getImagePath(customCard.customImg)"
+          />
         </div>
       </div>
     </section>
