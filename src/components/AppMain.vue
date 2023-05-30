@@ -1,5 +1,6 @@
 <script>
 import SmallCard from "./SmallCard.vue";
+import BigCard from "./BigCard.vue";
 
 export default {
   data() {
@@ -106,6 +107,7 @@ export default {
   },
   components: {
     SmallCard,
+    BigCard,
   },
 };
 </script>
@@ -164,6 +166,14 @@ export default {
             :carType="smallCards.type"
             :urlImg="getImagePath(smallCards.img)"
           />
+        </div>
+      </div>
+    </section>
+    <!-- CARDS DELLE AUTO -->
+    <section>
+      <div class="container">
+        <div class="carShop">
+          <BigCard />
         </div>
       </div>
     </section>
