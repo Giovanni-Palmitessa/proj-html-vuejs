@@ -225,6 +225,17 @@ export default {
                 </p>
               </div>
             </div>
+
+            <div class="vehicles">
+              <font-awesome-icon icon="fa-solid fa-car" class="car-icon" />
+              <div class="know-us">
+                <h3>2nd Hand Vehicles</h3>
+                <p>
+                  You can put your used vehicles for sale by adding them to our
+                  website.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -340,6 +351,7 @@ export default {
     .vehicles {
       display: flex;
       gap: 0.7rem;
+      margin-bottom: 2rem;
       .car-icon {
         font-size: 4rem;
       }
