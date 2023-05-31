@@ -281,6 +281,9 @@ export default {
 
           <select>
             <option value="">Brand</option>
+            <option v-for="brand in arrBrands" :key="brand" :value="brand">
+              {{ brand }}
+            </option>
           </select>
 
           <select>
