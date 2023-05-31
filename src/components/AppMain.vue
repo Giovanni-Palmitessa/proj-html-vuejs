@@ -25,7 +25,11 @@ export default {
         "Full-Hybrid",
         "LPG",
       ],
-
+      arrTransmissions: [
+        "Manual transmission",
+        "Automatic transmission",
+        "CVT transmission",
+      ],
       arrJumboImg: [
         {
           jumboImg: "../assets/img/slider-autocar-5.jpg",
@@ -303,10 +307,19 @@ export default {
 
           <select>
             <option value="">Transmission</option>
+            <option
+              v-for="transmission in arrTransmissions"
+              :key="transmission"
+              :value="transmission"
+            >
+              {{ transmission }}
+            </option>
           </select>
 
           <select>
             <option value="">Status</option>
+            <option value="true">Available</option>
+            <option value="false">Not available</option>
           </select>
 
           <button>Search</button>
