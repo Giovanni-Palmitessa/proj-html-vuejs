@@ -456,19 +456,25 @@ export default {
 .filterChoose {
   display: flex;
   // justify-content: space-between;
-  padding: 0.5rem;
+  padding: 1rem;
   gap: 1rem;
   input {
     width: calc((100% - 7rem) / 8);
     padding: 1.5rem;
+    border-radius: 5px;
   }
   select {
     width: calc((100% - 7rem) / 8);
     padding: 1.5rem;
+    border-radius: 5px;
   }
   button {
     width: calc((100% - 7rem) / 8);
     padding: 1.5rem;
+    background-color: $black-main;
+    color: $white-main;
+    font-weight: 600;
+    border-radius: 5px;
   }
 }
 
