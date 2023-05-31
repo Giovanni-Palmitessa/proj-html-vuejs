@@ -193,27 +193,6 @@ export default {
 <template>
   <main>
     <!-- JUMBOTRON -->
-    <!-- da qui giusto -->
-    <!-- <section class="jumbo" :class="{ active: index == activeIndex }">
-      <div class="container">
-        <div class="jumbo-details">
-          <p class="jumbo-main">Buy And Sell Your Car At Its Value</p>
-          <p class="jumbo-second">Find the right price and dealer.</p>
-          <p class="jumbo-second">
-            Learn More <font-awesome-icon icon="fa-solid fa-arrow-right" />
-          </p>
-        </div>
-      </div>
-      <div class="chevron left">
-        <font-awesome-icon icon="fa-solid fa-chevron-left" />
-      </div>
-
-      <div class="chevron right">
-        <font-awesome-icon icon="fa-solid fa-chevron-right" />
-      </div>
-    </section> -->
-    <!-- a qui giusto -->
-
     <section>
       <div
         v-for="(element, index) in arrJumboImg"
@@ -245,7 +224,6 @@ export default {
         <font-awesome-icon icon="fa-solid fa-chevron-right" />
       </div>
     </section>
-
     <!-- LISTA PER FILTRARE -->
     <section>
       <div class="container">
