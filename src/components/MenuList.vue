@@ -14,5 +14,8 @@ export default {
 <style lang="scss" scoped>
 a {
   color: black;
+  &:hover {
+    color: darksalmon;
+  }
 }
 </style>
