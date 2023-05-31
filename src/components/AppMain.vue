@@ -17,6 +17,14 @@ export default {
         "SUV",
       ],
       arrBrands: ["BMW", "Seat", "Volswagen", "Mercedes-Benz", "Audi", "Fiat"],
+      arrFuel: [
+        "Diesel",
+        "Gasoline",
+        "Electric",
+        "Mild-Hybrid",
+        "Full-Hybrid",
+        "LPG",
+      ],
 
       arrJumboImg: [
         {
