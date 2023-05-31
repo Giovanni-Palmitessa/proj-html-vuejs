@@ -8,6 +8,14 @@ export default {
   data() {
     return {
       activeIndex: 0,
+      arrCategories: [
+        "Cabrio",
+        "Coupe",
+        "Hatchback",
+        "Pick Up",
+        "Sedan",
+        "SUV",
+      ],
       arrJumboImg: [
         {
           jumboImg: "../assets/img/slider-autocar-5.jpg",
@@ -135,6 +143,32 @@ export default {
           customName: "Elizabeth",
         },
       ],
+      arrCustomCard2: [
+        {
+          customComment:
+            "A fast and reliable vehicle selling site. Rare quality website with hundreds of model vehicles.",
+          customImg: "../assets/img/man2.png",
+          customName: "Adam",
+        },
+        {
+          customComment:
+            "I was trying to sell my car. And I put it here and sold it for more than I was worth.",
+          customImg: "../assets/img/testimonial4-1.png",
+          customName: "Cristiane",
+        },
+        {
+          customComment:
+            "One of the quality websites I apply to rent a car. There are hundreds of different tools.",
+          customImg: "../assets/img/man1.png",
+          customName: "Robert",
+        },
+        {
+          customComment:
+            "We are a gallery vehicle dealer. Before we met this site, our sales were sluggish.",
+          customImg: "../assets/img/testimonial2-1.png",
+          customName: "Elizabeth",
+        },
+      ],
       arrResendCar: [
         {
           resendImg: "../assets/img/news-autocar-1-300x180.jpg",
@@ -234,6 +268,13 @@ export default {
 
           <select>
             <option value="">All Categories</option>
+            <option
+              v-for="category in arrCategories"
+              :key="category"
+              :value="category"
+            >
+              {{ category }}
+            </option>
           </select>
 
           <select>
@@ -362,17 +403,15 @@ export default {
           <p>Opinions from our happy customers.</p>
         </div>
 
-        <!-- DA QUI GIUSTO LE CARD -->
         <div class="customCards">
           <CustomersCard
-            v-for="customCard in arrCustomCard"
+            v-for="customCard in arrCustomCard2"
             :key="customCard.customName"
             :comment="customCard.customComment"
             :name="customCard.customName"
             :image="getImagePath(customCard.customImg)"
           />
         </div>
-        <!-- A QUI GIUSTO LE CARD -->
       </div>
     </section>
     <!-- ARTICOLI MARCHE MACCHINE -->
