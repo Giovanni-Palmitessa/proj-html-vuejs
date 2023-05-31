@@ -14,6 +14,7 @@ export default {
 <style lang="scss" scoped>
 a {
   color: black;
+  transition: all 0.5s ease-out;
   &:hover {
     color: darksalmon;
   }

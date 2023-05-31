@@ -32,6 +32,7 @@ li {
     a {
       color: white;
       font-weight: 600;
+      transition: all 0.5s ease-out;
       &:hover {
         color: darksalmon;
       }
