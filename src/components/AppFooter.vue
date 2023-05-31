@@ -179,8 +179,12 @@ footer {
       display: flex;
       gap: 3rem;
       flex-basis: 30%;
+      h2 {
+        margin-bottom: 1rem;
+      }
       .list {
         list-style: square;
+        list-style-position: inside;
       }
     }
   }
