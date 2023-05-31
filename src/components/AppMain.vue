@@ -16,6 +16,8 @@ export default {
         "Sedan",
         "SUV",
       ],
+      arrBrands: ["BMW", "Seat", "Volswagen", "Mercedes-Benz", "Audi", "Fiat"],
+
       arrJumboImg: [
         {
           jumboImg: "../assets/img/slider-autocar-5.jpg",
