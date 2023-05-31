@@ -114,6 +114,9 @@ export default {
           </div>
         </div>
       </div>
+      <div class="credits">
+        <p>© 2022 Autocar - All Right Reserved.</p>
+      </div>
     </div>
   </footer>
 </template>
@@ -187,6 +190,12 @@ footer {
         list-style-position: inside;
       }
     }
+  }
+  .credits {
+    text-align: center;
+    color: $white-main;
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
   }
 }
 </style>
