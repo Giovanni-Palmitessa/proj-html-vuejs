@@ -530,11 +530,17 @@ export default {
     width: calc((100% - 7rem) / 8);
     padding: 1.5rem;
     border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   select {
     width: calc((100% - 7rem) / 8);
     padding: 1.5rem;
     border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
   }
   button {
     width: calc((100% - 7rem) / 8);
@@ -543,6 +549,9 @@ export default {
     color: $white-main;
     font-weight: 600;
     border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
