@@ -32,6 +32,9 @@ li {
     a {
       color: white;
       font-weight: 600;
+      &:hover {
+        color: darksalmon;
+      }
     }
   }
 }
