@@ -228,9 +228,9 @@ export default {
     <section>
       <div class="container">
         <div class="filterChoose">
-          <input type="text" placeholder="Keywords" />
+          <input type="text" placeholder="Keywords" class="text" />
 
-          <input type="text" placeholder="Location" />
+          <input type="text" placeholder="Location" class="text" />
 
           <select>
             <option value="">All Categories</option>
@@ -249,7 +249,7 @@ export default {
           </select>
 
           <select>
-            <option value="">Form</option>
+            <option value="">Status</option>
           </select>
 
           <button>Search</button>
@@ -455,8 +455,21 @@ export default {
 
 .filterChoose {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding: 0.5rem;
+  gap: 1rem;
+  input {
+    width: calc((100% - 7rem) / 8);
+    padding: 1.5rem;
+  }
+  select {
+    width: calc((100% - 7rem) / 8);
+    padding: 1.5rem;
+  }
+  button {
+    width: calc((100% - 7rem) / 8);
+    padding: 1.5rem;
+  }
 }
 
 .smallCardList {
