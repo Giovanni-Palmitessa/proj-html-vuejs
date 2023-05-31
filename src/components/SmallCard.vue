@@ -17,13 +17,17 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/partials/variables" as *;
 .card {
-  border: 1px solid $gray-main;
+  // border: 1px solid $gray-main;
   width: calc(100% / 6);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
   padding-bottom: 1.3rem;
+  box-shadow: 1px 1px 5px rgba(199, 189, 189, 0.403);
+  &:hover {
+    cursor: pointer;
+  }
   .type {
     font-size: 1.3rem;
   }
