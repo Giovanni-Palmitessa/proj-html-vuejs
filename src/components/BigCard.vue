@@ -39,8 +39,11 @@ export default {
 .bigCard {
   width: calc(100% / 4);
   padding: 0.5rem;
-  border: 1px solid $gray-main;
   margin-bottom: 1rem;
+  box-shadow: 1px 1px 5px rgba(199, 189, 189, 0.403);
+  &:hover {
+    cursor: pointer;
+  }
   img {
     width: 100%;
     margin-bottom: 8px;

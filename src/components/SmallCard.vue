@@ -17,7 +17,6 @@ export default {
 <style lang="scss" scoped>
 @use "../assets/partials/variables" as *;
 .card {
-  // border: 1px solid $gray-main;
   width: calc(100% / 6);
   display: flex;
   flex-direction: column;
