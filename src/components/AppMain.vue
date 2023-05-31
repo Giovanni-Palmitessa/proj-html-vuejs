@@ -227,6 +227,16 @@ export default {
           class="jumboImg"
         />
       </div>
+      <div class="container">
+        <div class="jumbo-details">
+          <p class="jumbo-main">Buy And Sell Your Car At Its Value</p>
+          <p class="jumbo-second">Find the right price and dealer.</p>
+          <p class="jumbo-second">
+            Learn More <font-awesome-icon icon="fa-solid fa-arrow-right" />
+          </p>
+        </div>
+      </div>
+
       <div class="chevron left" @click="showPrevSlide">
         <font-awesome-icon icon="fa-solid fa-chevron-left" />
       </div>
@@ -415,24 +425,12 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/partials/variables" as *;
-.item {
-  display: none;
-}
 .item.active {
   display: block;
 }
-
-// .jumbo-details {
-//   height: calc(100vh - 70px);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   gap: 0.8rem;
-// }
-
 .item {
+  display: none;
   height: 100vh;
-  color: $white-main;
   .jumboImg {
     width: 100%;
     height: 100%;
@@ -460,37 +458,20 @@ export default {
     }
   }
 }
-.jumbo {
-  height: 100vh;
+.jumbo-details {
   color: $white-main;
+  position: absolute;
+  top: 50%;
+  left: 10%;
   .jumbo-main {
     font-size: 3rem;
     font-weight: 800;
     max-width: 500px;
   }
   .jumbo-second {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
-  }
-  .chevron {
-    color: $white-main;
-    font-size: 2rem;
-    &.left {
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-    &.right {
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      &:hover {
-        cursor: pointer;
-      }
-    }
+    line-height: 30px;
   }
 }
 
