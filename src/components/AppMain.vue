@@ -8,14 +8,14 @@ export default {
   data() {
     return {
       activeIndex: 0,
-      // // arrJumboImg: [
-      // //   {
-      // //     jumboImg: "../assets/img/slider-autocar-5.jpg",
-      // //   },
-      // //   {
-      // //     jumboImg: "../assets/img/slider-autocar-6.jpg",
-      // //   },
-      // ],
+      arrJumboImg: [
+        {
+          jumboImg: "../assets/img/slider-autocar-5.jpg",
+        },
+        {
+          jumboImg: "../assets/img/slider-autocar-6.jpg",
+        },
+      ],
       arrSmallCard: [
         {
           type: "Cabrio",
@@ -181,9 +181,6 @@ export default {
         this.activeIndex = this.arrJumboImg.length - 1;
       }
     },
-    setActiveIndex(index) {
-      this.activeIndex = index;
-    },
   },
   components: {
     SmallCard,
@@ -197,7 +194,7 @@ export default {
   <main>
     <!-- JUMBOTRON -->
     <!-- da qui giusto -->
-    <section class="jumbo" :class="{ active: index == activeIndex }">
+    <!-- <section class="jumbo" :class="{ active: index == activeIndex }">
       <div class="container">
         <div class="jumbo-details">
           <p class="jumbo-main">Buy And Sell Your Car At Its Value</p>
@@ -207,6 +204,25 @@ export default {
           </p>
         </div>
       </div>
+      <div class="chevron left">
+        <font-awesome-icon icon="fa-solid fa-chevron-left" />
+      </div>
+
+      <div class="chevron right">
+        <font-awesome-icon icon="fa-solid fa-chevron-right" />
+      </div>
+    </section> -->
+    <!-- a qui giusto -->
+
+    <section>
+      <div
+        v-for="(element, index) in arrJumboImg"
+        class="item"
+        :key="element.jumboImg"
+        :class="{ active: index == activeIndex }"
+      >
+        <img :src="getImagePath(element.jumboImg)" :alt="element.jumboImg" />
+      </div>
       <div class="chevron left" @click="showPrevSlide">
         <font-awesome-icon icon="fa-solid fa-chevron-left" />
       </div>
@@ -215,7 +231,6 @@ export default {
         <font-awesome-icon icon="fa-solid fa-chevron-right" />
       </div>
     </section>
-    <!-- a qui giusto -->
 
     <!-- LISTA PER FILTRARE -->
     <section>
@@ -396,6 +411,12 @@ export default {
 
 <style lang="scss" scoped>
 @use "../assets/partials/variables" as *;
+.item {
+  display: none;
+}
+.item.active {
+  display: block;
+}
 
 .jumbo-details {
   height: calc(100vh - 70px);
