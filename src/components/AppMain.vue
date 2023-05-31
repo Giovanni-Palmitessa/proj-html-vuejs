@@ -296,6 +296,9 @@ export default {
 
           <select>
             <option value="">Fuel Type</option>
+            <option v-for="fuel in arrFuel" :key="fuel" :value="fuel">
+              {{ fuel }}
+            </option>
           </select>
 
           <select>
