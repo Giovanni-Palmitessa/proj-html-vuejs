@@ -362,6 +362,7 @@ export default {
           <p>Opinions from our happy customers.</p>
         </div>
 
+        <!-- DA QUI GIUSTO LE CARD -->
         <div class="customCards">
           <CustomersCard
             v-for="customCard in arrCustomCard"
@@ -370,8 +371,8 @@ export default {
             :name="customCard.customName"
             :image="getImagePath(customCard.customImg)"
           />
-          <!-- BISOGNA AGGIUNGERE LE VIRGOLETTE NELLA CARD -->
         </div>
+        <!-- A QUI GIUSTO LE CARD -->
       </div>
     </section>
     <!-- ARTICOLI MARCHE MACCHINE -->
@@ -455,7 +456,6 @@ export default {
 
 .filterChoose {
   display: flex;
-  // justify-content: space-between;
   padding: 1rem;
   gap: 1rem;
   input {
@@ -603,6 +603,8 @@ export default {
     margin-top: 3rem;
   }
 }
+
+// PROVA PER CAROSELLO
 
 .resent-articles {
   text-align: center;
