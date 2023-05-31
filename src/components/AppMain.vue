@@ -221,7 +221,11 @@ export default {
         :key="element.jumboImg"
         :class="{ active: index == activeIndex }"
       >
-        <img :src="getImagePath(element.jumboImg)" :alt="element.jumboImg" />
+        <img
+          :src="getImagePath(element.jumboImg)"
+          :alt="element.jumboImg"
+          class="jumboImg"
+        />
       </div>
       <div class="chevron left" @click="showPrevSlide">
         <font-awesome-icon icon="fa-solid fa-chevron-left" />
@@ -418,22 +422,47 @@ export default {
   display: block;
 }
 
-.jumbo-details {
-  height: calc(100vh - 70px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.8rem;
+// .jumbo-details {
+//   height: calc(100vh - 70px);
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   gap: 0.8rem;
+// }
+
+.item {
+  height: 100vh;
+  color: $white-main;
+  .jumboImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+}
+.chevron {
+  color: $white-main;
+  font-size: 2rem;
+  &.left {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &.right {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 .jumbo {
   height: 100vh;
-  background-image: url(../assets/img/slider-autocar-5.jpg);
-  background-size: cover;
   color: $white-main;
-  position: relative;
-  &.active {
-    background-image: url(../assets/img/slider-autocar-6.jpg);
-  }
   .jumbo-main {
     font-size: 3rem;
     font-weight: 800;
